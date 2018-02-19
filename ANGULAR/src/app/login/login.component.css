@@ -8,8 +8,8 @@
 	margin-left: 20px;
 }
 
-nav mat-toolbar span{
-    font-weight: bold;
+nav mat-toolbar span.title{
+    margin-right: 30px;
 }
 
 nav mat-toolbar span.pullRight{
