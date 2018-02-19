@@ -1,0 +1,23 @@
+.loginHeaderContainer{
+	height: 100px;
+}
+
+#loginContent{
+	width: 400px;
+	height: 400px;
+	margin-left: 20px;
+}
+
+nav mat-toolbar span{
+    font-weight: bold;
+}
+
+nav mat-toolbar span.pullRight{
+    font-weight: bolder;
+    font-size: 40px;
+    color: gold;
+}
+
+.fillToolBar{
+    flex: 1 1 auto;
+}

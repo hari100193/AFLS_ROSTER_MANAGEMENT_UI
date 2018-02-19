@@ -1,0 +1,24 @@
+<div class="loginHeaderContainer">
+        <nav>
+                <mat-toolbar>
+                                <span class="pullRight">></span>
+                                <span class="p10">AFLS</span>
+                                <button mat-button routerLink="resourceManagement">Resource Management</button>
+                                <button mat-button routerLink="/">Team</button>     
+                                <span class="fillToolBar"></span>
+                </mat-toolbar>
+        </nav>
+</div>
+
+<div id="loginContent" class="mL10 pullLeft">
+    <mat-card>
+        <mat-form-field>
+          <input matInput placeholder="Username" [(ngModel)]="username" type="text">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Enter your password" [(ngModel)]="password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        </mat-form-field>
+        <button mat-button (click)="login()">Login</button>
+      </mat-card>
+</div>
