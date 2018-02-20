@@ -11,13 +11,13 @@
 
 <div id="loginContent" class="mL10 pullLeft">
     <mat-card>
-        <mat-form-field>
+        <mat-form-field class="fullWidth">
           <input matInput placeholder="Username" [(ngModel)]="username" type="text">
         </mat-form-field>
-        <mat-form-field>
+        <mat-form-field class="fullWidth">
             <input matInput placeholder="Enter your password" [(ngModel)]="password" [type]="hide ? 'password' : 'text'">
             <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
         </mat-form-field>
-        <button mat-button (click)="login()">Login</button>
-      </mat-card>
+        <button mat-button (click)="login()" class="fullWidth loginButton">Login</button>
+    </mat-card>
 </div>
