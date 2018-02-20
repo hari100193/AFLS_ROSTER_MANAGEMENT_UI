@@ -5,7 +5,7 @@
 #loginContent{
 	width: 400px;
 	height: 400px;
-	margin-left: 20px;
+	margin: auto;
 }
 
 nav mat-toolbar span.title{

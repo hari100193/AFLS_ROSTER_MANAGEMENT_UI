@@ -9,10 +9,11 @@ const routes: Routes = [
 	{ path: '', redirectTo : 'login', pathMatch : 'full'},
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent,
-  children : [
-    { path: 'resourceManagement', component : ResourceManagementComponent}
-  ]
- },
+    children : [
+      { path: '', redirectTo : 'resourceManagement', pathMatch:'full'},
+      { path: 'resourceManagement', component : ResourceManagementComponent}
+    ]
+  },
 ];
 
 @NgModule({

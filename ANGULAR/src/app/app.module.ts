@@ -16,7 +16,8 @@ import {
   MatIconModule,
   MatToolbarModule, 
   MatFormField,
-  MatCardModule
+  MatCardModule,
+  MatExpansionModule
  } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResourceManagementComponent } from './home/resource-management/resource-management.component';
@@ -41,7 +42,8 @@ import { ResourceManagementComponent } from './home/resource-management/resource
     MatIconModule,
     MatMenuModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

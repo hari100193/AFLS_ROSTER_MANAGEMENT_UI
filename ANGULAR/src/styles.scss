@@ -3,10 +3,9 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-indigo);
-$accent: mat-palette($mat-pink, A200, A100, A400);
-$warn:    mat-palette($mat-red, 500);
-
+$primary: mat-palette($mat-grey);
+$accent: mat-palette($mat-amber, A200, A100, A400);
+$warn:    mat-palette($mat-deep-orange);
 $theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);
@@ -18,6 +17,10 @@ body {
 
 h1, h2, h3, h4 {
     font-weight: normal;
+}
+
+.mT10{
+    margin-top: 10px !important;
 }
 
 .p10{
@@ -42,4 +45,8 @@ h1, h2, h3, h4 {
 
 .fullWidth{
     width: 100% !important;
+}
+
+.fill{
+    flex: 1 1 auto !important;
 }
